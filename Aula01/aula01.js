@@ -75,17 +75,23 @@ const prompt = require('prompt-sync')();
 
 
 
+/*
+Faça o cálculo contrário: leia um valor inteiro correspondente à idade de uma pessoa em dias 
+e informe-a em anos, meses e dias. 
+Também considere todo ano com 365 dias e todo mês com 30 dias.
+*/
+
 let diasTotal = +prompt('Quantos dias você viveu? ');
 
 let anos = parseInt(diasTotal / 365);
 
+// Excluo o quantidade de dias que já foram calculadas, e divido o resultado por 30 para ter os meses
 let meses = parseInt((diasTotal - (anos * 365))/30);
 
+// Do total de dias, excluo a quantidade que já foram calculadas em anos e meses, o que sobrar são os dias
 let dias = parseInt((diasTotal - (anos * 365) - (meses * 30)))
 
-console.log(anos);
-console.log(meses);
-console.log(dias);
+console.log(`Você viveu por ${anos} anos, ${meses} meses e ${dias} dias.`);
 
 
 
