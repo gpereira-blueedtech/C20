@@ -1,5 +1,5 @@
 console.clear()
-const prompt = require("prompt-sync")();
+// const prompt = require("prompt-sync")();
 
 // aluno1 = 'Raphael'
 // aluno2 = 'Johni'
@@ -17,9 +17,9 @@ let idades = [20, 18, 22, 23, 35, 20, 45, 30]
 // let aluno = 'Raphael'
 // console.log(aluno[0]);
 
-// O último índice de uma lista sempre será igual o seu 'tamanho - 1', 
-// pois quando contamos o tamanho (quantidade de itens), contamos a partir do 1
-// Já para contar os índices, começamos a partir de 0
+// // O último índice de uma lista sempre será igual o seu 'tamanho - 1', 
+// // pois quando contamos o tamanho (quantidade de itens), contamos a partir do 1
+// // Já para contar os índices, começamos a partir de 0
 // console.log(alunosC20.length);
 // console.log(alunosC20[0]);
 
@@ -95,13 +95,13 @@ idades = [20, 18, 22, 23, 35, 20, 45, 30];
 // console.log(primeiroItem); // 1
 
 // // // Alterando a variável
-// // primeiroItem = 5;
+// primeiroItem = 5;
 
-// // console.log(numeros); // [1, 2, 3] - O array permanece sem alteração
-// // console.log(primeiroItem); // 5 - O valor da variável é alterado
+// console.log(numeros); // [1, 2, 3] - O array permanece sem alteração
+// console.log(primeiroItem); // 5 - O valor da variável é alterado
 
 
-// // Alterando diretamente pelo índice
+// // // Alterando diretamente pelo índice
 // numeros[0] = 99;
 
 // // A var primeiroItem está com o valor de quando ela foi declarada, a array ainda tinha o valor antigo.
@@ -124,31 +124,34 @@ alunosC20 = ['Fellipe','Adriano','Gabriel','Raphael', 'Johni', 'Adriano', 'Caio'
 // let novoAluno = 'Everton Serpa'
 // alunosC20.push(novoAluno);
 
+// console.log(alunosC20);
+
 
 // // O método unshift() vai adicionar um novo elemento ao começo de um array já existente
 // // Nesse caso os índices SÃO alterados
 // alunosC20.unshift('Ricardo');
 
-
 // console.log(alunosC20);
+
+
 
 // // pop: Remove o último elemento de uma array.
 // // Esse elemento é RETORNADO e eu posso armazená-lo
 // // Os índices não são alterados
 // let removido = alunosC20.pop();
 
+// console.log(removido);
 
-// // // shift: Remove o primeiro elemento de uma array.
-// // // Os índices SÃO alterados
+// // shift: Remove o primeiro elemento de uma array.
+// // Os índices SÃO alterados
 // removido = alunosC20.shift();
 
-// console.log(removido);
 
 // console.log(alunosC20);
 // console.log(removido);
 
 
-
+alunosC20 = ['Fellipe','Adriano','Gabriel','Raphael', 'Johni', 'Adriano', 'Caio', 'Everton'];
 
 // // O primeiro argumento (2 nesse exemplo) é o índice onde o método vai começar a ser aplicado.
 // // Caso eu não passe outro argumento, ele vai remover todos os elementos a partir desse índice
@@ -165,7 +168,7 @@ alunosC20 = ['Fellipe','Adriano','Gabriel','Raphael', 'Johni', 'Adriano', 'Caio'
 
 
 // // A partir do terceiro argumento, eu passo os novos valores a serem adicionados ao array.
-// let removidos = alunosC20.splice(2, 2, 'Luiz');
+// let removidos = alunosC20.splice(2, 5, 'Luiz');
 // console.log(alunosC20);
 // console.log(removidos);
 
@@ -176,15 +179,17 @@ alunosC20 = ['Fellipe','Adriano','Gabriel','Raphael', 'Johni', 'Adriano', 'Caio'
 
 
 
-console.log(alunosC20);
 
-let elementoRemover = prompt('Qual nome deseja remover? ');
-let novoElemento = prompt('Qual nome deseja adicionar? ')
-let indiceRemover = alunosC20.indexOf(elementoRemover);
-console.log(indiceRemover);
 
-alunosC20.splice(indiceRemover, 1, novoElemento);
+// console.log(alunosC20);
 
-console.log(alunosC20);
+// let elementoRemover = prompt('Qual nome deseja remover? ');
+// let novoElemento = prompt('Qual nome deseja adicionar? ')
+// let indiceRemover = alunosC20.indexOf(elementoRemover);
+// console.log(indiceRemover);
+
+// alunosC20.splice(indiceRemover, 1, novoElemento);
+
+// console.log(alunosC20);
 
 console.log();
