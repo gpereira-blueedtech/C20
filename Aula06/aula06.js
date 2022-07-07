@@ -1,5 +1,5 @@
 console.clear()
-// const prompt = require("prompt-sync")();
+const prompt = require("prompt-sync")();
 
 // aluno1 = 'Raphael'
 // aluno2 = 'Johni'
